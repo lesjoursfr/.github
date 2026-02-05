@@ -1,0 +1,42 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Default preset for use with Les Jours repos",
+  "extends": ["config:best-practices", ":semanticCommits"],
+  "timezone": "Europe/Paris",
+  "schedule": ["before 4:00 am on the first day of the month"],
+  "rangeStrategy": "bump",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["after 4:00 am and before 9:00 am on Monday"],
+    "automerge": true,
+    "automergeType": "branch",
+    "automergeStrategy": "squash"
+  },
+  "assignees": ["e-adrien"],
+  "automergeType": "branch",
+  "commitBodyTable": true,
+  "configMigration": true,
+  "dependencyDashboard": true,
+  "prCreation": "not-pending",
+  "rebaseWhen": "behind-base-branch",
+  "platformAutomerge": true,
+  "packageRules": [
+    {
+      "description": "Require dashboard approval for major updates",
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
+    },
+    {
+      "description": "Require approval for @tsconfig/node replacements",
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@tsconfig/node*"],
+      "matchUpdateTypes": ["replacement"],
+      "dependencyDashboardApproval": true
+    },
+    {
+      "description": "Automerge non-major updates",
+      "matchUpdateTypes": ["minor", "patch", "digest", "lockFileMaintenance"],
+      "automerge": true
+    }
+  ]
+}
