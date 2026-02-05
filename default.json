@@ -34,8 +34,15 @@
       "dependencyDashboardApproval": true
     },
     {
-      "description": "Automerge non-major updates",
-      "matchUpdateTypes": ["minor", "patch", "digest", "lockFileMaintenance"],
+      "description": "Automerge non-major & pin updates",
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "pinDigest",
+        "digest",
+        "lockFileMaintenance"
+      ],
       "automerge": true
     }
   ]
