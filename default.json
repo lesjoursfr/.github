@@ -60,6 +60,30 @@
       "groupName": "all non-major npm dependencies",
       "groupSlug": "npm-all-minor-patch",
       "automerge": true
+    },
+    {
+      "matchDatasources": ["dart"],
+      "matchPackageNames": ["*"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "all non-major dart dependencies",
+      "groupSlug": "dart-all-minor-patch",
+      "automerge": true
+    },
+    {
+      "matchDatasources": ["maven", "gradle-version"],
+      "matchPackageNames": ["*"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "all non-major gradle dependencies",
+      "groupSlug": "gradle-all-minor-patch",
+      "automerge": false
+    },
+    {
+      "matchDatasources": ["pod"],
+      "matchPackageNames": ["*"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "all non-major pod dependencies",
+      "groupSlug": "pod-all-minor-patch",
+      "automerge": false
     }
   ]
 }
