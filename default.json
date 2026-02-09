@@ -22,6 +22,10 @@
   "platformAutomerge": true,
   "packageRules": [
     {
+      "matchDatasources": ["npm", "packagist", "dart"],
+      "abandonmentThreshold": "2 years"
+    },
+    {
       "description": "Require dashboard approval for major updates",
       "matchUpdateTypes": ["major"],
       "dependencyDashboardApproval": true
