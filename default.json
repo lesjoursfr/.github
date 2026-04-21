@@ -23,7 +23,9 @@
   "packageRules": [
     {
       "matchDatasources": ["npm", "packagist", "dart"],
-      "abandonmentThreshold": "2 years"
+      "abandonmentThreshold": "2 years",
+      "minimumReleaseAge": "7 days",
+      "internalChecksFilter": "strict"
     },
     {
       "description": "Require dashboard approval for major updates",
