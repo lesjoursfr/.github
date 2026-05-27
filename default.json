@@ -90,6 +90,11 @@
       "groupName": "all non-major pod dependencies",
       "groupSlug": "pod-all-minor-patch",
       "automerge": false
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@lesjoursfr/**"],
+      "minimumReleaseAge": "24 hours"
     }
   ]
 }
