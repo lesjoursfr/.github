@@ -92,6 +92,18 @@
       "automerge": false
     },
     {
+      "matchDatasources": ["github-tags", "github-releases"],
+      "matchPackageNames": [
+        "actions/checkout",
+        "actions/setup-node",
+        "shivammathur/setup-php",
+        "actions/node-versions"
+      ],
+      "matchUpdateTypes": ["minor", "patch", "pin", "pinDigest", "digest"],
+      "groupName": "all GitHub actions dependencies",
+      "groupSlug": "github-actions-all-minor-patch"
+    },
+    {
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@lesjoursfr/**"],
       "minimumReleaseAge": "24 hours"
