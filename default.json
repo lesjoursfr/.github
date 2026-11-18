@@ -16,7 +16,9 @@
   "automergeType": "branch",
   "commitBodyTable": true,
   "configMigration": true,
-  "dependencyDashboard": true,
+  "dependencyDashboard": {
+    "enabled": true
+  },
   "prCreation": "not-pending",
   "rebaseWhen": "behind-base-branch",
   "platformAutomerge": true,
