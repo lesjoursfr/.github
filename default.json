@@ -107,6 +107,13 @@
     },
     {
       "matchDatasources": ["npm"],
+      "matchPackageNames": ["stylelint", "stylelint-config-standard-scss"],
+      "groupName": "all major stylelint dependencies",
+      "groupSlug": "stylelint-all-major",
+      "matchUpdateTypes": ["major"]
+    },
+    {
+      "matchDatasources": ["npm"],
       "matchPackageNames": ["@lesjoursfr/**"],
       "minimumReleaseAge": "24 hours"
     }
